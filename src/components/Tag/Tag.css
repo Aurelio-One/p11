@@ -1,0 +1,42 @@
+.tag {
+  background: #ff6060;
+  border-radius: 5px;
+  color: #fff;
+  padding: 3px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  min-width: 68px;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .tag {
+    padding: 4px 12px;
+    border-radius: 7px;
+  }
+}
+
+@media (min-width: 992px) {
+  .tag {
+    padding: 5px 14px;
+    border-radius: 10px;
+  }
+}
+
+.tag-name {
+  margin: 0;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+@media (min-width: 576px) {
+  .tag-name {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  .tag-name {
+    font-size: 14px;
+  }
+}

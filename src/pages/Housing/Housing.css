@@ -1,0 +1,96 @@
+.housing-content {
+  margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+  .housing-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+}
+
+.housing-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (min-width: 576px) {
+  .housing-title {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .housing-title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .housing-title {
+    font-size: 36px;
+  }
+}
+
+.housing-location {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (min-width: 576px) {
+  .housing-location {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .housing-location {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .housing-location {
+    font-size: 18px;
+  }
+}
+
+.housing-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.housing-right-infos {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+  .housing-right-infos {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    margin: 0;
+  }
+}
+
+.housing-dropdowns {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .housing-dropdowns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .housing-dropdowns {
+    column-gap: 80px;
+  }
+}

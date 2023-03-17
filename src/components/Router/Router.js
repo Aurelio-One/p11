@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Header from '../../pages/Header/Header'
-import Footer from '../../pages/Footer/Footer'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 import Home from '../../pages/Home/Home'
 import About from '../../pages/About/About'
 import Housing from '../../pages/Housing/Housing'
@@ -22,6 +22,10 @@ function Router() {
         <Route
           path='about'
           element={<About />}
+        />
+        <Route
+          path='housing/:housingId'
+          element={<Housing />}
         />
         <Route
           path='*'
