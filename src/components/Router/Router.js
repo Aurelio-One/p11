@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Header from '../Header/Header'
-import Footer from '../Footer/Footer'
-import Home from '../Home/Home'
-import About from '../About/About'
-import Housing from '../Housing/Housing'
-import NotFound from '../NotFound/NotFound'
+import Header from '../../pages/Header/Header'
+import Footer from '../../pages/Footer/Footer'
+import Home from '../../pages/Home/Home'
+import About from '../../pages/About/About'
+import Housing from '../../pages/Housing/Housing'
+import NotFound from '../../pages/NotFound/NotFound'
 
 function Router() {
   return (
