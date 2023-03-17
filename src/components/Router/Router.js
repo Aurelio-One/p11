@@ -5,10 +5,12 @@ import Home from '../../pages/Home/Home'
 import About from '../../pages/About/About'
 import Housing from '../../pages/Housing/Housing'
 import NotFound from '../../pages/NotFound/NotFound'
+import ScrollToTop from '../ScrollToTop/ScrollToTop'
 
 function Router() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route
