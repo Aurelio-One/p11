@@ -1,0 +1,145 @@
+.dropdown {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.dropdown-button {
+  color: #FFF;
+  font-size: 24px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  padding-left: 20px;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 640px) {
+  .dropdown-button {
+    height: 38px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown-button {
+    height: 46px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .dropdown-button {
+    height: 52px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown-button {
+      font-size: 13px;
+      padding-left: 10px
+    }
+  }
+
+.dropdown-arrow {
+  margin-right: 1rem;
+  pointer-events: none;
+  transform: rotate(180deg);
+  transition: transform 300ms;
+  transform-origin: bottom -25%;
+  translate: -50% -50%;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 640px) {
+    .dropdown-arrow {
+      height: 10px;
+    }
+  }
+
+@media screen and (min-width: 640px) {
+  .dropdown-arrow {
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dropdown-arrow {
+    height: 10px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+    .dropdown-arrow {
+      height: 17px;
+      margin-top: 20px
+    }
+  }
+
+.dropdown-content {
+  color: #ff6666;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin-top: -5px;
+  z-index: -1;
+  max-height: 0;
+  transition: max-height 250ms ease-out, padding 300ms ease-out;
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+.dropdown-text {
+  margin: 0;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 640px) {
+  .dropdown-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown-text {
+    font-size: 18px;
+  }
+}
+
+.dropdown-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 640px) {
+  .dropdown-list {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown-list {
+    font-size: 18px;
+  }
+}
+
+.dropdown-list-item {
+  margin-bottom: 3px;
+}
+
+.up {
+  transform: rotate(0deg);
+}
+
+.dropdown-content.visible {
+    padding: 20px;
+    max-height: initial;
+}
