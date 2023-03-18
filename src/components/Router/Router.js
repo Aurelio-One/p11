@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import Home from '../../pages/Home/Home'
@@ -30,8 +30,12 @@ function Router() {
           element={<Housing />}
         />
         <Route
-          path='*'
+          path='not-found'
           element={<NotFound />}
+        />
+        <Route
+          path='*'
+          element={<Navigate to='/not-found' />}
         />
       </Routes>
       <Footer />

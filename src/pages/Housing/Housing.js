@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import data from '../../data/data.json'
 import Rating from '../../components/Rating/Rating'
 import Slider from '../../components/Slider/Slider'
@@ -11,6 +11,11 @@ import './Housing.css'
 function Housing() {
   const { housingId } = useParams()
   const housing = data.find((housing) => housing.id === housingId)
+
+  if (!housing) {
+    return <Navigate to='/not-found' />
+  }
+
   const { title, location, rating, host, equipments, description, pictures } =
     housing
 
