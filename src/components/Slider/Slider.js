@@ -24,6 +24,11 @@ function Slider({ slides }) {
           className='slider-image'
           loading='lazy'
         />
+         {slides.length > 1 ? (
+          <div className='img-count'>
+            {currentSlide + 1} / {slides.length}
+          </div>
+        ) : null}
       </div>
 
       {slides.length > 1 ? (

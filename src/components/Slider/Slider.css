@@ -83,10 +83,22 @@
   cursor: pointer;
 }
 
+.img-count {
+  display: none;
+}
+
 @media screen and (min-width: 576px) {
   .slider-next-icon,
   .slider-previous-icon {
     height: 27px;
+  }
+  .img-count {
+    display: block;
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
   }
 }
 
